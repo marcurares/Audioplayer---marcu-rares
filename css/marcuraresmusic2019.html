@@ -1,0 +1,102 @@
+<html>
+<head>
+    <title>Marcu Rares music</title>
+	<link rel="stylesheet" href="css/style.css" media="screen">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+		<div class="nav">
+				<div class="title"><h1>MARCU RARES</h1></div>
+				<div class="links">
+					<h2><a id="get" href="#" target='blank'>Get in touch</a>
+					<a id="buy" href="https://marcurares.bandcamp.com/" target='blank'>Buy music</a> </h2>
+				</div>
+				
+			</div>
+		
+<div id="container">
+	<br>
+		<div id="audio-player">
+				<div id="audio-info">
+					<span class="artist"></span> - <span class="title"></span>
+				</div>
+				
+			
+	
+	<br>
+	    <div class="undoitrei">
+			<p id="treidoiun">Volume </p>
+		 </div>
+		 <br>
+		 <input id="volume"  type="range" min="0" max="10" value="10" />
+		 <br>
+		 <div id="buttons">
+		 <span>
+			<button id="prev"></button>
+			<button id="play"></button>
+			<button id="pause"></button>
+			<button id="stop"></button>
+			<button id="next"></button>
+			</span>
+		 </div>
+		 <div class="clearfix"></div>
+		 <div id="tracker">
+			<div id="progressBar">
+				<span id="progress"></span>
+			</div>
+			<span id="duration"></span>
+		 </div>
+		 <div class="clearfix"></div>
+		 <ul id="playlist" class="hidden">
+			<li song="marcurares.mp3" cover="cover1.jpg" artist="Marcu Rares"> When you shouldn't is exactly when you really should</li>
+			<li song="waves.mp3" cover="cover1.jpg" artist="Marcu Rares"> Waves</li>
+			<li song="arvo.mp3" cover="cover1.jpg" artist="Marcu Rares"> Arvo</li>
+			<li song="#" cover="cover1.jpg" artist="Marcu Rares"> Lunatique</li>
+			<li song="Linkin Park - Crawling.mp3" cover="cover1.jpg" artist="Marcu Rares">Flamingo Around</li>
+			<li song="Linkin Park - Runaway.mp3" cover="cover1.jpg" artist="Marcu Rares">Flamingo Ahead</li>
+			<li song="Linkin Park - By Myself.mp3" cover="cover1.jpg" artist="Marcu Rares">Serar</li>
+			<li song="Linkin Park - In The End.mp3" cover="cover1.jpg" artist="Marcu Rares">Mndlss Fckdll</li>
+			<li song="Linkin Park - A Place For My Head.mp3" cover="cover1.jpg" artist="Marcu Rares">Annie Bass</li>
+			<li song="Linkin Park - Forgotten.mp3" cover="cover1.jpg" artist="Marcu Rares">Coboara Bach</li>
+			<li song="Linkin Park - Cure For The Itch.mp3" cover="cover1.jpg" artist="Marcu Rares">It's about a jacket, relax</li>
+			<li song="Linkin Park - Pushing Me Away.mp3" cover="cover1.jpg" artist="Marcu Rares">If I jump off the balcony, I wouldn't die, I would fly</li>
+			
+		</ul>
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+</div>
+<div class="footer">
+	<p>akjfhaek</p>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script>
+		var get = document.getElementById("get");
+		var buy = document.getElementById("buy");
+		
+		get.addEventListener("mouseover", function(){
+			buy.style.border = "2px solid white" , buy.style.backgroundColor = "black" , buy.style.color = "white";
+		})
+		get.addEventListener("mouseout", function(){
+			buy.style.border = "" , buy.style.backgroundColor = "" ,  buy.style.color = "";
+		})
+		buy.addEventListener("mouseover", function(){
+			get.style.border = "2px solid white" , get.style.backgroundColor = "black" , get.style.color = "white";
+		})
+		buy.addEventListener("mouseout", function(){
+			get.style.border = "" , get.style.backgroundColor = "" ,  get.style.color = "";
+		})
+	
+		
+	 
+		</script>
+</body>
+</html>
